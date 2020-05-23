@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PayLauncher</string>
+    <string name="todo">TODO</string>
+    <string name="launch_app_title">起動するアプリを選んでください</string>
+    <string name="description">さし変わる</string>
+    <string name="news">最新のNEWS</string>
+    <string name="default_news">スマホ決済</string>
+    <string name="not_install">Not Install</string>
+    <string name="play_store">Play Store</string>
+    <string name="setting">設定</string>
+    <string name="no_install">インストールされていません。\nGoogle Play Store のページに飛びますか？</string>
+    <string name="still_install">アンインストールできます。\nGoogle Play Store のページに飛びますか？</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="how_to_use">使い方</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="menu">メニュー</string>
+    <string name="assist_message">左からスワイプすることで\nメニューを引き出すことができます。</string>
+    <string name="fail_load_news">ニュースの取得に失敗しました。\nここをタップか下にスワイプで更新してください。</string>
+
+</resources>
