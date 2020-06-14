@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/launcher_app_background"
+            android:gravity="center"
+            android:text="@string/launch_app_title"
+            android:textColor="@color/topview_backgraoud"
+            android:textSize="@dimen/launch_app_title_size" />
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="41dp"
+            android:layout_height="34dp"
+            android:src="@drawable/menu" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#8BC34A" />
+
+    <GridView
+        android:id="@+id/launch_apps_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title"
+        android:gravity="center"
+        android:numColumns="4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#8BC34A" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

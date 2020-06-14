@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/topview_backgraoud"
+            app:tabTextColor="@color/tab_color" />
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/main_drawer_navigation"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/app_title"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:textSize="25sp"
+                android:text="@string/app_name"
+                android:background="@color/launcher_app_background"
+                android:gravity="center"
+                android:textColor="@color/topview_backgraoud"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                app:srcCompat="@mipmap/icon_launch_round"
+                android:background="@color/divider_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color"/>
+
+            <TextView
+                android:id="@+id/how_to_use"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/how_to_use"
+                android:textColor="@color/launcher_app_background"
+                android:layout_gravity="center"
+                android:textSize="20sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color"/>
+
+            <TextView
+                android:id="@+id/setting"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/setting"
+                android:textColor="@color/launcher_app_background"
+                android:layout_gravity="center"
+                android:textSize="20sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

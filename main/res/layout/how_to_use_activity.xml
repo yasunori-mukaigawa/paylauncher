@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HowToUseActivity"
+    android:id="@+id/hint"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/base_hint_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@color/launcher_app_background"
+        android:textColor="@color/topview_backgraoud"
+        android:textSize="23dp"
+        android:text="@string/how_to_use" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/hint_pager"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/shape_rounded_corners_10dp"
+            android:text="@string/hint_page_skip"
+            android:textColor="@color/topview_backgraoud" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="36dp"
+            android:layout_toStartOf="@+id/next"
+            android:layout_toEndOf="@+id/skip"
+            android:background="@drawable/shape_rounded_corners_10dp"
+            android:text="@string/hint_page_back"
+            android:textColor="@color/topview_backgraoud" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_rounded_corners_10dp"
+            android:text="@string/hint_page_next"
+            android:textColor="@color/topview_backgraoud" />
+    </RelativeLayout>
+</LinearLayout>
