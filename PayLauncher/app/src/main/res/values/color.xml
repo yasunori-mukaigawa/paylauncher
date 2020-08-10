@@ -1,7 +1,0 @@
-<resources>
-    <color name="topview_backgraoud">#FFFFFF</color>
-    <color name="launcher_app_background">#4caf50</color>
-    <color name="divider_color">#8bc34a</color>
-    <color name="fragment_background">#dcedc8</color>
-    <color name="tab_color">#1B5E20</color>
-</resources>
